@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Climate Data - Humidity</title>
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> 
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<div class="Max_Temp">
+
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html" ><b>Latitude</b></a>  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+          </ul>
+          <div class="nav-item dropdown">
+            <form class="form-inline">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="Max_Temp.html">Max Temperature</a>
+                <a class="dropdown-item" href="Cloud.html">Cloudiness</a>
+                <a class="dropdown-item" href="Humid.html">Humidity</a>
+                <a class="dropdown-item" href="Wind.html">Wind Speed</a>
+              </div>
+              <div class="compare_nav">
+                <a href="comparison.html">Comparison</a>
+              </div>
+              <div class="data_nav">
+                <a href="data.html">Data</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </nav>
+<body>
+    <div class="page">
+      <main><br>      
+        <div class="container">        
+          <div class = "row">
+            <div class="col-md-7">
+              <div class="row">
+                <div class="col-md-12">  
+                  <h3 class="block_hdr"><b>Latitude vs. Humidity</b></h3>
+                  <img class="splash_img" src="Lat_Humid.png" width = 500px height =350px>
+                </div>
+                <div class="col-md-12" class="splash_txt" align=justify>With respect to humidity, it appears as though there is a clustering
+                  of cities towards the top of the humidity scale.  The lowest amounts of humidity appear to occur between -40 and 40 degrees
+                  of latitude, with cities being on or very close to the equator all having extremely high levels of humidity.
+                </div>
+              </div>
+            </div>
+          
+            <div class="spacer col-md-1">      
+            </div>
+          
+            <div class="data col-md-4">
+              <h4 class="block_hdr"><b>Visualizations</b></h4>
+              <div class="row">
+                <div class="image">
+                  <a href="Cloud.html"><img src="Lat_Cloud.png" width=140px height=140px></a>
+                </div>
+                <div class = "image">
+                  <a href="Max_Temp.html"><img src="Lat_Temp.png" width=140px height=140px></a>
+                </div>
+              </div>
+                
+              <div class="row">
+                <div class="humid_image">
+                  <a href="Humid.html"><img src="Lat_Humid.png" width=140px height=140px></a>
+                </div>
+                <div class="image">
+                  <a href="wind.html"><img src="Lat_Wind.png" width=140px height=140px></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</div>
+</html>

@@ -1,0 +1,130 @@
+/* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
+.block_hdr {
+  font-family:'Times New Roman', Times, serif;
+  color:royalblue;
+}
+
+.body {
+  background-color:lightgray;
+}
+
+.btn {
+  background-color:white;
+  text-align:right;
+}
+
+.cloud_image {
+  border:25px;
+  padding:2px;
+  background-color:royalblue;
+}
+
+.col {
+  background-color:lightgrey;
+}
+
+.col-md-1 {
+  font-size:15px;
+  background-color:white;
+}
+
+.col-md-4 {
+  font-size:15px;
+  background-color:white;
+}
+
+.col-md-7  {
+  font-size:15px;
+  background-color:white;
+}
+
+.compare_nav {
+  background-color:white;
+  line-height:38px;
+  padding:10px;
+}
+
+.container {
+  background-color:lightgray;
+}
+
+.data{
+  padding:30px;
+  background-color:white;
+}
+
+.data_nav {
+  background-color:white;
+  text-aligh:left;
+  line-height:38px;
+  padding:10px;
+}
+
+.drop_down {
+  background-color:white;
+}
+
+.humid_image {
+  border:25px;
+  padding:2px;
+  background-color:royalblue;
+}
+
+.navbar-brand {
+  font-family:'Times New Roman', Times, serif;
+  background-color:royalblue;
+  padding:5px;
+  font-size:40px;
+  color:white;
+}
+
+.navbar {
+  background-color:white;
+  padding:0px;
+}
+
+.page {
+  background-color:lightgray;
+}
+
+.row {
+  padding:20px;
+}
+
+.spacer {
+  background-color:lightgrey;
+}
+
+.splash_img {
+  float:left;
+}
+
+.splash_txt {
+  font:15px;
+  line-height:25px;
+}
+
+.summary {
+  padding:10px 0;
+  border:10px;
+}
+
+.table {
+  background-color:white;
+}
+.temp_image {
+  border:25px;
+  padding:2px;
+  background-color:royalblue;
+}
+
+.wind_image {
+  border:25px;
+  padding:2px;
+  background-color:royalblue;
+}
+
+
+@media (max-width: 990px) {
+  
+}

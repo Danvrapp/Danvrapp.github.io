@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Climate Data - REAL</title>
+  <title>Climate Data - cloud cover</title>
   <!-- Bring in our bootstrap stylesheet -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -11,6 +11,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
+
+<div class="Cloud">
 
 <nav class="navbar navbar-expand-lg">
   <a class="navbar-brand" href="index.html" ><b>Latitude</b></a>  
@@ -38,49 +40,53 @@
     </form>
   </div>
 </nav>
-
 <body>
-<div class="page">
-  <main><br>      
-    <div class="container">        
-      <div class = "row">
-        <div class="col-md-7">  
-          <h3 class="block_hdr"><br>Summary: Latitude vs. X</h3><br>
-          <img class="splash_img" src="Lat_Temp.png" width = 300px height =250px>
-          <div class="splash_txt" align=justify><br>The purpose of this project was to analyze how weather changes as you get closer to the
-              equator.  To accomplish this analysis, I first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.<p><br>
-              After assembling the dataset, I used the Python Matplotlib library to plot various aspects of the weather vs. latitude.  Factors we looked at 
-              included: temperature, cloudiness, wind speed, and humidity.  This site provides the source data and visualizations created as 
-              part of the analysis, as well as explanations and descriptions of any trends and correlations I witnessed.
+    <div class="page">
+      <main><br>      
+        <div class="container">        
+          <div class = "row">
+            <div class="col-md-7">
+              <div class="row">
+                <div class="col-md-12">  
+                  <h3 class="block_hdr"><b>Latitude vs. Cloud Cover</b></h3>
+                  <img class="splash_img" src="Lat_Cloud.png" width = 500px height =350px>
+                </div>
+                <div class="col-md-12" class="splash_txt" align=justify>Surprisingly, there does not appear to be much coorelation between the 
+                  latitude of a given city and it's respective cloud cover.  There is a rather large cluster of cities with 0%, or close to 0%,
+                  cloud cover and a two rather prominent groups of cities near the 75% and 90% levels.<br><br>It is also interesting to note 
+                  that there is obvious horizontal grouping of cities.  I hypothesize this to be because cloud cover is being approximated,
+                  perhaps to the nearest 5%.  
+                </div>
+              </div>
+            </div>
+          
+            <div class="spacer col-md-1">      
+            </div>
+          
+            <div class="data col-md-4">
+              <h4 class="block_hdr"><b>Visualizations</b></h4>
+              <div class="row">
+                <div class="cloud_image">
+                  <a href="Cloud.html"><img src="Lat_Cloud.png" width=140px height=140px></a>
+                </div>
+                <div class = "image">
+                  <a href="Max_Temp.html"><img src="Lat_Temp.png" width=140px height=140px></a>
+                </div>
+              </div>
+                
+              <div class="row">
+                <div class="image">
+                  <a href="Humid.html"><img src="Lat_Humid.png" width=140px height=140px></a>
+                </div>
+                <div class="image">
+                  <a href="wind.html"><img src="Lat_Wind.png" width=140px height=140px></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      
-        <div class="spacer col-md-1">      
-        </div>
-      
-        <div class="data col-md-4">
-          <h4 class="block_hdr">Visualizations</h4>
-          <div class="row">
-            <div class="image">
-              <a href="Cloud.html"><img src="Lat_Cloud.png" width=140px height=140px></a>
-            </div>
-            <div class = "image">
-              <a href="Max_Temp.html"><img src="Lat_Temp.png" width=140px height=140px></a>
-            </div>
-          </div>
-            
-          <div class="row">
-            <div class="image">
-              <a href="Humid.html"><img src="Lat_Humid.png" width=140px height=140px></a>
-            </div>
-            <div class="image">
-              <a href="wind.html"><img src="Lat_Wind.png" width=140px height=140px></a>
-            </div>
-          </div>
-        </div>
-      </div>
+      </main>
     </div>
-  </main>
+  </body>
 </div>
-</body>
 </html>
